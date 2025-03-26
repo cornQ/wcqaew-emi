@@ -1,0 +1,55 @@
+/* Container for the EMI display */
+.wcqaew-emi-container {
+    margin-top: 15px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Tooltip trigger styling */
+.wcqaew-emi-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #0073aa;
+    text-decoration: underline;
+}
+
+/* Styling for the tooltip text */
+.wcqaew-emi-tooltip .wcqaew-emi-tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555555f7;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Display tooltip when hovered */
+.wcqaew-emi-tooltip:hover .wcqaew-emi-tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip arrow styling */
+.wcqaew-emi-tooltip .wcqaew-emi-tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
